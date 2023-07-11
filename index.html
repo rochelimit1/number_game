@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>숫자 추측게임</title>
+    <style>
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .form input {
+        width: 200px;
+      }
+    </style>
   </head>
   <body>
     <h1>숫자 추측 게임</h1>
@@ -13,7 +25,13 @@
     <form action="">
       <lable for="guessField">추측 숫자를 입력하세요.</lable
       ><input type="text" id="guessField" />
-      <input type="text" />
+      <input type="submit" value="submit " />
+
+      <!-- 결과 창 -->
+      <div class="resultParas"></div>
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
     </form>
   </body>
 </html>
